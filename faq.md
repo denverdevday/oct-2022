@@ -9,10 +9,7 @@
 1. Is this for a certain technology? `No`
 1. Is this event in Denver? `Yes!`
 1. Is this event multiple days? `No`
-
-**About you**
-
-10. Does this event pay speakers? `No`
+1. Does this event pay speakers? `No`
 1. Does this event _want to_ pay speakers? `Yes!`
 1. Does this event reimburse travel costs? `No`
 1. Does this event _want to_ reimburse travel costs? `Yes!`
