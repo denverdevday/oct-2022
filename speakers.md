@@ -29,10 +29,12 @@ we'll create a track for you. We're open to new ideas, but, remember the dev in 
 
 **Tip:** we love talks on design patterns and development techniques.
 
-$$ How long should your talk be? 
+## How long should your talk be? 
 
 We have two session lengths: regular and lightning. Regular sessions are just under an hour depending 
 how many sessions are accepted; lightning talks are 10 to 15 minutes depending on how many talks are accepted. 
+
+<hr />
 
 **Tell us:** anything special with your talk? (time of day you are available, unique facility set-up, etc.)
 
