@@ -51,5 +51,8 @@ We will not disclose any personal information about the attendees to sponsors, a
 
 Cash sponsorships are due within 14 days of commitment, and payment can be made via credit card or check.
 
+## Contact
+
 **Thank you for your consideration.**
+sponsors@denverdevday.com
 
