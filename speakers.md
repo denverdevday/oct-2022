@@ -28,7 +28,7 @@ promote inclusivity and diversity at our conference. All submissions are welcome
 The most successful talks are often level 100 or 200 talks. That does not mean you cannot submit
 and advanced talk. It's just lower level talks tend to reach a broader audience. It is up to you.
 
-## How many talks can I submit? 
+## How many talks can you submit? 
 
 As many as you like. We generally only choose one (maybe two) per speaker. If you are traveling to Denver, 
 be sure to let us know. We'll consider multiple sessions for speakers traveling to Denver Dev Day.
@@ -51,7 +51,7 @@ _We look forward to seeing your submission._
 
 -- The Denver Dev Day planning team.
 
-## Frequently asked questions
+# Frequently asked questions
 
 1. Is this an online event? `No`
 1. Is this a hybrid event? `No`
