@@ -12,3 +12,15 @@ Denver Dev Day is Colorado’s best, community-led developer event! Enjoying eve
 
 Microsoft is a recurring sponsor for Denver Dev Day and has provided our venue space for nearly 6+ years. 
 We're grateful for their continued sponsorship; find out more about our great venue in the event site details. 
+
+## Speakers
+
+More information [here](speakers.md). 
+
+## Tickets
+
+More information [here](tickets.md).
+
+## Code of Conduct
+
+More information [here](conduct.md).
