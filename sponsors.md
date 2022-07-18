@@ -18,7 +18,7 @@ friends with the developer community.
 
 |Level    |Amount |Door Prize |Benefits
 |-|-|-|-
-|Titaniam |$4,000 |$100 x2    |All Platinum benefits plus: <li/>Comment during keynote <li/>Two sessions at event
+|Titanium |$4,000 |$100 x2    |All Platinum benefits plus: <li/>Comment during keynote <li/>Two sessions at event
 |Platinum |$3,000 |$100 x2    |All Gold benefits plus: <li/>One session at event <li/>Invitation to pre/post-event dinners
 |Gold     |$2,000 |$100 x2    |All Silver benefits plus: <li/>Table at event <li />Two event tickets
 |Silver   |$1,000 |$100       |All Bronze benefits plus: <li/>Logo on everything <li/>Keynote callout
@@ -35,7 +35,7 @@ If your organization would like to sponsor a certain thing, you are welcome to c
 |Pre-event dinner   |$1,250 (est)   |Local warm-up dinner for ~50 volunteers, speakers & sponsors
 |Attendee shirts    |$5,000 (est)   |Denver Dev Day t-shirt for 250 attendees & volunteers
 |Speaker gifts      |$3,000 (est)   |$100 gift card per speaker, per session. Estimated 30 speakers.
-|Breakfast          |$1,250 (est)   |Day-of contenintenal breakfast feeding 250 attendees & volunteers
+|Breakfast          |$1,250 (est)   |Day-of continental breakfast feeding 250 attendees & volunteers
 |Lunch              |$2,250 (est)   |Day-of lunch feeding 250 attendees & volunteers
 |post-event dinner  |$1,250 (est)   |Local thank you dinner for ~50 volunteers, speakers & sponsors
 
