@@ -25,6 +25,10 @@ More information [here](speakers.md).
 
 More information [here](tickets.md).
 
+## Blog
+
+More information [here](blog.md).
+
 ## Code of Conduct
 
 More information [here](conduct.md).
