@@ -45,10 +45,39 @@
     </div>
 </div>
 
+<div class="container fluid text-center">
+    <!-- Noscript content for added SEO -->
+    <noscript><a href="https://denverdevday-oct-2022.eventbrite.com" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
+    <!-- You can customize this button any way you like -->
+    <button id="eventbrite-widget-modal-trigger-358985895477" type="button">Buy Tickets</button>
+
+    <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+    <script type="text/javascript">
+        var exampleCallback = function() {
+            console.log('Order complete!');
+        };
+
+        window.EBWidgets.createWidget({
+            widgetType: 'checkout',
+            eventId: '358985895477',
+            modal: true,
+            modalTriggerElementId: 'eventbrite-widget-modal-trigger-358985895477',
+            onOrderComplete: exampleCallback
+        });
+    </script>
+</div>
+
 <div id="menu" class="container-fluid mt-3 mb-3">
     <div class="row justify-content-md-center">
         <div class="col-md-auto">
-            <a href="https://sessionize.com/DenverDevDay-Fall-2022" target="_cfs">Call for Speakers</a>
+            <a href="./index.html#schedule">Schedule</a>
+        </div>
+        <div class="col-md-auto">
+            <a href="./sessions.html#sessions">Sessions</a>
+        </div>
+        <div class="col-md-auto">
+            <a href="./speakers.html#speakers">Speakers</a>
         </div>
         <div class="col-md-auto">
             <a href="./index.html#sponsors">Sponsors</a>
@@ -84,19 +113,38 @@
     other developers in our developer community, step up&nbsp;&mdash; let this year be the year you submit a talk to Denver Dev Day.</p>
 </div>
 
-<!--div id="app" class="container-fluid mt-5 mb-5">
-    <a name="app"></a>
-    <h2>Our App</h2>
-    <div class="container text-center">
-        <div class="row align-items-center">
-            <div class="col">
-                <a href="http://aka.ms/ddd-app-ios"><img src="./assets/app-store-badge.png" title="Download on the App Store"></a>
-                &nbsp;
-                <a href="http://aka.ms/ddd-app-android"><img src="./assets/google-play-badge.png" height="80" width="auto" title="Get it on Google Play"></a>
-            </div>
-        </div>
-    </div>
-</div-->
+<!-- Schedule widget -->
+
+<div id="schedule" class="container-fluid mt-5 mb-5">
+    <a name="schedule"></a>
+    <script type="text/javascript" src="https://sessionize.com/api/v2/w7ar7gtz/view/gridtable"></script>
+
+    <script type="text/javascript">
+        sessionize.onLoad = function () {
+
+            document.querySelectorAll('th').forEach(t => {
+                if (t.innerText.toUpperCase().startsWith('MAROON')) {
+                    t.innerHTML = 'MAROON&nbsp;' + t.innerText.charAt(t.innerText.length -1);
+                }
+            });
+
+            let hl = document.querySelectorAll('tr.sz-row-highlight');
+            hl.forEach(h => h.className = h.className.replace('sz-row-highlight', ''));
+
+            const roomSelector = 'div[class="sz-session__meta-group"]';
+
+            let keynoteDiv = document.querySelector('div[data-sessionid="65ae2d7c-ec73-428c-8301-f328a711b095"]');
+            keynoteDiv.classList.add('text-center');
+            let keynoteRoomDiv = keynoteDiv.querySelector(roomSelector);
+            keynoteRoomDiv.parentElement.removeChild(keynoteRoomDiv);
+
+            let lunchDiv = document.querySelector('div[data-sessionid="8cf5c911-b317-43a9-aaa0-9477aa54df18"]');
+            lunchDiv.classList.add('text-center');
+            let lunchRoomDiv = lunchDiv.querySelector(roomSelector);
+            lunchRoomDiv.parentElement.removeChild(lunchRoomDiv);
+        };
+    </script>
+</div>
 
 <div id="sponsors" class="container-fluid mt-5 mb-5">
     <h2 class="mb-3">Sponsors</h2>
