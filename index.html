@@ -49,7 +49,7 @@
     <!-- Noscript content for added SEO -->
     <noscript><a href="https://denverdevday-oct-2022.eventbrite.com" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
     <!-- You can customize this button any way you like -->
-    <button id="eventbrite-widget-modal-trigger-358985895477" type="button">Buy Tickets</button>
+    <button id="eventbrite-widget-modal-trigger-358985895477" type="button">Get Ticket!</button>
 
     <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
@@ -124,6 +124,9 @@
             <div class="col p-3">
                 <a href="https://www.lunavi.com/"><img class="img-fluid" src="./assets/sponsors/lunavi.png" title="Lunavi"></a>
             </div>
+
+            <!-- UNO sponsor -->
+
             <div class="col p-3">
                 <a href="https://www.microsoft.com/"><img class="img-fluid" src="./assets/sponsors/microsoft.png" title="Microsoft"></a>
             </div>
@@ -137,33 +140,33 @@
     <a name="schedule"></a>
     <script type="text/javascript" src="https://sessionize.com/api/v2/w7ar7gtz/view/gridtable"></script>
 
-    <script type="text/javascript">
-        sessionize.onLoad = function () {
+<script type="text/javascript">
+        window.addEventListener('sessionize.onload', function (e) {
+            const roomCapacityRx = /\s+\(\d+\)/;
 
             document.querySelectorAll('th').forEach(t => {
-                if (t.innerText.toUpperCase().startsWith('MAROON')) {
-                    t.innerHTML = 'MAROON&nbsp;' + t.innerText.charAt(t.innerText.length -1);
-                }
+               t.innerText = t.innerText.replace(roomCapacityRx, '');
+            });
+
+            document.querySelectorAll('td[data-room-name]').forEach(d => {
+               d.dataset.roomName = d.dataset.roomName.replace(roomCapacityRx, '');
             });
 
             let hl = document.querySelectorAll('tr.sz-row-highlight');
             hl.forEach(h => h.className = h.className.replace('sz-row-highlight', ''));
 
-            const roomSelector = 'div[class="sz-session__meta-group"]';
+            function eventSession(id) {
+                let divElement = document.querySelector('div[data-sessionid="' + id + '"]');
+                divElement.classList.add('text-center');
+                let divRoomElement = divElement.querySelector('div[class="sz-session__meta-group"]');
+                divRoomElement.parentElement.removeChild(divRoomElement);
+            }
 
-            let keynoteDiv = document.querySelector('div[data-sessionid="65ae2d7c-ec73-428c-8301-f328a711b095"]');
-            keynoteDiv.classList.add('text-center');
-            let keynoteRoomDiv = keynoteDiv.querySelector(roomSelector);
-            keynoteRoomDiv.parentElement.removeChild(keynoteRoomDiv);
-
-            let lunchDiv = document.querySelector('div[data-sessionid="8cf5c911-b317-43a9-aaa0-9477aa54df18"]');
-            lunchDiv.classList.add('text-center');
-            let lunchRoomDiv = lunchDiv.querySelector(roomSelector);
-            lunchRoomDiv.parentElement.removeChild(lunchRoomDiv);
-        };
+            eventSession('65ae2d7c-ec73-428c-8301-f328a711b095'); // Keynote
+            eventSession('8cf5c911-b317-43a9-aaa0-9477aa54df18'); // Lunch
+        });
     </script>
 </div>
-
 
 </body>
 </html>
